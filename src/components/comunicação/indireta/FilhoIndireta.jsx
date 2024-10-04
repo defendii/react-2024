@@ -1,4 +1,4 @@
-export function FilhoIndireta(){
+export function FilhoIndireta(props){
 
     return(
         <div className={`
@@ -8,20 +8,20 @@ export function FilhoIndireta(){
          <div className="flex gap-3">
             <button 
                 className="botao"
-                onClick={() => setNome("João")}
+                onClick={() => props.alterar("João")}
             >
                 João
             </button>
             <button 
                 className="botao" 
-                onClick={() => setNome("Maria")}
+                onClick={() => props.alterar("Maria")}
             >
                 Maria
             </button>
             
             <button 
                 className="botao" 
-                onClick={() => setNome("José")}
+                onClick={() => props.alterar("José")}
             >
                 José
             </button>
