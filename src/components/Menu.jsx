@@ -100,6 +100,19 @@ export function Menu() {
           Comunicação Indireta
         </NavLink>
 
+
+        <span className="pt-4 pl-3 text-xs text-zinc-500">Hooks</span>
+
+        <NavLink to="comunicaçãoDireta" className={getEstilo}>
+          <IconSquareRoundedNumber5 />
+          UseRef
+        </NavLink>
+
+        <NavLink to="comunicaçãoDireta" className={getEstilo}>
+          <IconSquareRoundedNumber5 />
+          UseEffect
+        </NavLink>
+
       </nav>
 
       <footer className="absolute bottom-0 p-2 flex justify-center">
