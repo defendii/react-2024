@@ -1,15 +1,16 @@
-import { Pagina } from "../../components/Pagina"
-import { PaiDireta } from "../../components/comunicação/direta/PaiDireta"
+import { Pagina } from "../../components/Pagina";
+import { PaiDireta } from "../../components/comunicação/direta/PaiDireta";
 
-export function ComunicaçãoDireta(){
+export function ComunicaçãoDireta() {
 
-    return(
+    return (
         <Pagina 
-        titulo="Comunicação Direta" 
-        subtitulo="Exemplo de comunicação DIRETA entre componentes"
+            titulo="Comunicação Direta"
+            subtitulo="Exemplo de comunicação DIRETA entre componentes"
         >
-            <PaiDireta></PaiDireta>
-        
+            
+            <PaiDireta/>
+            
         </Pagina>
     )
 }

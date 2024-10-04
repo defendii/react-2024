@@ -1,15 +1,46 @@
-export function PaiDireta(){
+import { useState } from "react"
+import { FilhoDireta } from "./FilhoDireta"
 
-    return(
-        <div className="w-full flex flex-col items-center rounded-md bg-blue-500 text-white p-7">
-            
-            <div className="flex gap-3">
-                <button className="bg-purple-500 px-4 py-2 text-xhite"> João </button>
-                <button className="bg-purple-500 px-4 py-2 text-xhite"> Maria </button>
-                <button className="bg-purple-500 px-4 py-2 text-xhite"> José </button>
-            </div>
-            
+export function PaiDireta() {
 
-        </div>
+    const [nome, setNome] = useState("")
+
+    return (
+        <div
+      className={`
+            w-full flex flex-col items-center p-7 rounded-md
+            bg-blue-500 text-white gap-4
+        `}
+    >
+      <div className="flex gap-3">
+        <button 
+            className="botao"
+            onClick={() => setNome("João")}
+        >
+            João
+        </button>
+        <button 
+            className="botao" 
+            onClick={() => setNome("Maria")}
+        >
+            Maria
+        </button>
+        
+        <button 
+            className="botao" 
+            onClick={() => setNome("José")}
+        >
+            José
+        </button>
+        
+      </div>
+      {/* <span className="text-4xl p-5">{nome}</span> */}
+      
+      {/* Comunicação direta com o filho */}
+      <FilhoDireta texto={nome}/>
+
+        
+
+    </div>
     )
 }
