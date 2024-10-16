@@ -1,5 +1,6 @@
 import {
   IconAddressBook,
+  IconApple,
   IconBrandReact,
   IconHome,
   IconInfoCircle,
@@ -66,6 +67,12 @@ export function Menu() {
           Sobre
         </NavLink>
 
+
+        <NavLink to="Tradutor" className={getEstilo}>
+          <IconApple />
+          Tradutor
+        </NavLink>
+
         <span className="pt-4 pl-3 text-xs text-zinc-500">Estado</span>
 
         <NavLink to="semEstado" className={getEstilo}>
@@ -112,6 +119,7 @@ export function Menu() {
           <IconSquareRoundedNumber5 />
           UseEffect
         </NavLink>
+
 
       </nav>
 

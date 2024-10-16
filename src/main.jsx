@@ -21,6 +21,7 @@ import { ComunicaçãoIndireta } from "./pages/Comunicação/ComunicaçãoIndire
 import { ComunicaçãoDireta } from "./pages/Comunicação/ComunicaçãoDireta";
 import { UseRef} from "./pages/hooks-basicos/UseRef";
 import { UseEffect } from "./pages/hooks-basicos/UseEffect";
+import { Tradutor } from "./pages/Tradutor";
 
 // const rotas = createBrowserRouter([
 //   {path:"/", element: <Home/>},
@@ -45,6 +46,7 @@ const rotas = createBrowserRouter(
       <Route path="comunicaçãoDireta" element={<ComunicaçãoDireta/>} />
       <Route path="UseRef" element={<UseRef/>} />
       <Route path="UseEffect" element={<UseEffect/>} />
+      <Route path="Tradutor" element={<Tradutor/>} />
       <Route path="*" element={<Pagina404 />} />
     </Route>
   )
