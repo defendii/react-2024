@@ -16,7 +16,6 @@ import { Layout } from "./pages/_Layout";
 import { SemEstado } from "./pages/estado/SemEstado";
 import { ComEstado } from "./pages/estado/ComEstado";
 import { CampoTexto } from "./pages/estado/CampoTexto";
-import { Contador } from "./pages/estado/Contador";
 import { ComunicaçãoIndireta } from "./pages/Comunicação/ComunicaçãoIndireta";
 import { ComunicaçãoDireta } from "./pages/Comunicação/ComunicaçãoDireta";
 import { UseRef} from "./pages/hooks-basicos/UseRef";
@@ -41,7 +40,6 @@ const rotas = createBrowserRouter(
       <Route path="semEstado" element={<SemEstado/>} />
       <Route path="comEstado" element={<ComEstado/>} />
       <Route path="campoTexto" element={<CampoTexto/>} />
-      <Route path="contador" element={<Contador/>} />
       <Route path="comunicaçãoIndireta" element={<ComunicaçãoIndireta/>} />
       <Route path="comunicaçãoDireta" element={<ComunicaçãoDireta/>} />
       <Route path="UseRef" element={<UseRef/>} />
