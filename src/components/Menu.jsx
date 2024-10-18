@@ -1,5 +1,7 @@
 import {
+  IconAbc,
   IconAddressBook,
+  IconAirBalloon,
   IconApple,
   IconBrandReact,
   IconHome,
@@ -71,6 +73,11 @@ export function Menu() {
         <NavLink to="Tradutor" className={getEstilo}>
           <IconApple />
           Tradutor
+        </NavLink>
+
+        <NavLink to="Tradutor2" className={getEstilo}>
+          <IconAbc />
+          Tradutor 2
         </NavLink>
 
         <span className="pt-4 pl-3 text-xs text-zinc-500">Estado</span>
